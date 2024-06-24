@@ -15,3 +15,6 @@
 - [Place to share your code](https://glitch.com)
 - [Resources for Web Development](https://learn.shayhowe.com/html-css/writing-your-best-code/)
 - [Learn Layout](https://learnlayout.com/)
+- [Practice typing](https://www.keybr.com/)
+- [Color picker](https://imagecolorpicker.com/)
+- [MDN](mdn.com)
