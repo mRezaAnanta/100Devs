@@ -9,13 +9,11 @@
 }
 
 /* Please select Duck with the highest level of specificity possible */
-/*html body article .areDucksDinosaurs h2 .likesToQuack .fight10or100 {*/
-/*html body > article h2 {*/
-.likesToQuack {
-  color: yellow;
+html body h1#hi + section.top + section.middle + article.areDucksDinosaurs > h2.likesToQuack.fight10or100 {
+  color: lime !important;
 }
 
 /* Please select Rhino with the highest level of specificity possible */
-html body section > h2 {
+html body h1#hi + section.top > h2 + h2#zebra.africa.fourLegs {
   background-color: gold;
 }

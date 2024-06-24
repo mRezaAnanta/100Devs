@@ -5,14 +5,13 @@ section > h2 {
 }
 
 /* Please Make only Zebra Purple */
-h2 + h2 {
+section > h2 + h2 {
   color: purple;
 }
 
 /* Please Make only Hufflepuff Gold */
-article > h2 + h2 {
+section > article > h2 + h2 {
   color: gold;
-  color: gold !important;
 }
 
 /* Please keep Hufflepuff Gold and make ONLY Unicorn Gray  */
