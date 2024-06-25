@@ -17,4 +17,5 @@
 - [Learn Layout](https://learnlayout.com/)
 - [Practice typing](https://www.keybr.com/)
 - [Color picker](https://imagecolorpicker.com/)
-- [MDN](mdn.com)
+- [MDN](https://developer.mozilla.org/en-US/)
+- [Download Webpage to PDF](https://webtopdf.com/)

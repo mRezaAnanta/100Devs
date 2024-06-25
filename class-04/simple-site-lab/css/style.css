@@ -89,6 +89,7 @@ nav {
 }
 ul {
 	display: flex;
+	text-decoration: none;
 }
 nav span {
 	padding: 0 0.5em;
