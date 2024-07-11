@@ -1,0 +1,185 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+:root {
+  --darkgray: #e0e9f0;
+  --lightgray: #f5f9fc;
+  --black: #304759;
+  --white: #fafafa;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, p, span, a {
+  color: var(--black);
+}
+header, .hero, .section-2 {
+  background: var(--lightgray);
+}
+body {
+  font-family: arial;
+  background: var(--white);
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  /*display: flex;*/
+}
+header {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex: auto;
+}
+ul {
+  display: flex;
+}
+.hero {
+  padding: 5rem;
+  display: flex;
+  flex: 2 1 auto;
+  gap: 4rem;
+}
+.hero-top, .hero-btm {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  /*flex: 3 1 auto;*/
+}
+.form {
+  display: flex;
+  /*flex: 1 1 auto;*/
+  flex-flow: row wrap;
+  align-items: center;
+}
+.section-2 {
+  display: flex;
+  gap: 2rem;
+  padding: 0 5rem;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  /*flex-flow: row wrap;*/
+  /*flex: 4 4 auto;*/
+}
+.section-2 * {
+  margin-bottom: 1rem;
+}
+.section-3 {
+  padding: 5rem;
+  width: 50%;
+}
+.section-3 * {
+  margin-bottom: 1rem;
+}
+.hamburger-menu {
+  display: none;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header {
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.header-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header-nav li {
+  padding: 0 1rem;
+}
+button {
+  color: var(--white);
+  background: var(--black);
+  border: 1px solid var(--black);
+  padding: 0.5rem 1rem;
+}
+.hero span, .hero p {
+  font-size: 1rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero-top h1, .hero-top span, .hero-top .form {
+  margin-bottom: 1.5rem;
+}
+input {
+  background: var(--darkgray);
+  color: var(--black);
+  border: 1px solid var(--darkgray);
+  padding: 0.5rem 1rem;
+}
+.section-2 h3, .section-2 a {
+  font-weight: bold;
+}
+.section-2 h3 {
+  font-size: 1.5rem;
+}
+.section-2 {
+  padding-bottom: 3rem;
+}
+.section-3 h2 {
+  font-size: 3rem;
+}
+.section-2 img {
+  height: 2rem;
+}
+.hero-btm img {
+  /*height: 6rem;*/
+  width: 50rem;
+  overflow: hidden;
+}
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media screen and (max-width: 700px) {
+  /*header {*/
+  /*  display: none;*/
+  /*}*/
+  .header-nav, .header-button {
+    display: none;
+  }
+  .header-logo {
+    margin: auto;
+  }
+  .hero {
+    flex-flow: column wrap;
+    /*width: 100%;*/
+  }
+  .hero-top {
+    width: 100%;
+    /*display: block;*/
+  }
+  .form form, .form button, .form input {
+    width: 100%;
+  }
+  .form input {
+    margin-bottom: 1rem;
+  }
+  .section-3 {
+    padding: 5rem 5rem;
+    width: 100%;
+  }
+  .section-2 {
+    flex-flow: row wrap;
+  }
+  .section-2 .child {
+    width: 60%;
+  }
+  .hamburger-menu {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .hamburger-menu span {
+    font-size: 1rem;
+    font-weight: bold;
+    height: 0.3rem;
+  }
+}
