@@ -24,6 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+/* this style is made by mRezaAnanta on discord*/
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -47,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* body */
+/*STYLES */
 body {
   background-color: #87ceeb;
 	color: #fbfdfe;
@@ -83,12 +84,15 @@ h2 {
 	font-size: 1.5em;
 }
 nav {
-	display: flex;
-	justify-content: center;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
 	font-weight: bold;
 }
 ul {
 	display: flex;
+	/*display: inline-block;*/
+	text-align: center;
 	text-decoration: none;
 }
 nav span {
