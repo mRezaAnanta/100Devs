@@ -1,0 +1,233 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+:root {
+  --dark-orange: #FF8800;
+  --light-orange: #FFA84B;
+  --black: #000000;
+  --white: #fafafa;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+  /*color: var(--dark-orange);*/
+}
+body {
+  font-family: "Roboto", arial;
+  color: var(--black);
+}
+h1, h2 {
+  font-family: "Yeseva One", Garamond, arial;
+}
+/*svg {*/
+/*  color: var(--dark-orange);*/
+/*}*/
+/*h1, h2, h3, p, span, a {*/
+/*  color: var(--black);*/
+/*}*/
+/*header, .hero, .section-2 {*/
+/*  background: var(--lightgray);*/
+/*}*/
+/*body {*/
+/*  font-family: arial;*/
+/*  background: var(--white);*/
+/*}*/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/***************** HEADER *****************/
+svg {
+  height: 0.8rem;
+}
+header svg {
+  height: 1.5rem;
+}
+nav, header ul {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 2.5rem;
+  justify-content: flex-end;
+}
+header {
+  padding: 2rem;
+}
+
+/***************** HERO *****************/
+.hero {
+  /*width: 50%;*/
+  padding: 5rem 3rem;
+  background-image: url('https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.hero span {
+  padding: 0;
+}
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 2rem;
+  width: 50%;
+}
+.form input {
+  width: 75%;
+  height: 3rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: none;
+  /*border: 1px solid #000;*/
+  /*border: 1px solid #E4E7E9;*/
+  /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+.form button {
+  width: 25%;
+  height: 3rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  /*border: 1px solid #E4E7E9;*/
+  border: none;
+  /*border: 1px solid #000;*/
+  /*background-color: var(--dark-orange);*/
+  background: var(--dark-orange);
+  color: var(--white);
+  font-weight: bold;
+  /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+}
+.hero > div {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 3rem;
+  align-items: center;
+}
+
+/***************** ABOUT-US *****************/
+.about-us {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem;
+  background-image: url(https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.about-us > div {
+  padding-right: 10rem;
+}
+.about-us form {
+  display: flex;
+  height: 3rem;
+}
+.about-us .menu {
+  background: var(--dark-orange);
+  color: var(--white);
+  font-weight: bold;
+  width: 8rem;
+  /*height: 2rem;*/
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: none;
+}
+.about-us .arrow {
+  background: var(--light-orange);
+  color: var(--white);
+  font-weight: bold;
+  width: 3rem;
+  /*height: 2rem;*/
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: none;
+}
+
+/***************** MENU-CHOICE *****************/
+.menu-choice {
+  display: flex;
+  justify-content: center;
+  /*column-gap: 4rem;*/
+  /*border-bottom: 1px solid #000;*/
+  /*width: 50%;*/
+  /*margin: 0 auto;*/
+}
+.menu-choice a {
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 2rem;
+}
+.menu-choice a:hover {
+  color: var(--dark-orange);
+  border-bottom: 1px solid var(--dark-orange);
+}
+
+/***************** CUISINE *****************/
+.cuisine {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 3rem;
+  text-align: center;
+}
+.cuisine-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.gallery-img img {
+  height: 18rem;
+  width: 14rem;
+}
+
+/***************** RESERVATION *****************/
+.reservation {
+  text-align: center;
+  padding: 5rem;
+}
+
+/***************** TESTIMONIALS *****************/
+.testimonials {
+  text-align: center;
+  padding: 5rem;
+}
+.testimonials img {
+  border-radius: 50%;
+  height: 5rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  /*font-size: 3vw;*/
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+a, span, p {
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+h3 {
+  color: var(--dark-orange);
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+.testimonials p {
+  font-style: italic;
+}
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media screen and (max-width: 700px) {
+  .form * {
+    /*width: 100%;*/
+  }
+  .hero-top {
+    width: 75%;
+  }
+}
