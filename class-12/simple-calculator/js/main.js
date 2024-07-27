@@ -11,16 +11,16 @@ function makeZero() {
 }
 
 function jumanji() {
-  total = total + 3
+  total = total + 1
   document.querySelector('#placeToPutResult').innerText = total
 }
 
 function add9() {
-  total = total + 9
+  total = total * 5
   document.querySelector('#placeToPutResult').innerHTML = total
 }
 
 function sub2() {
-  total = total - 2
+  total = total % 2
   document.querySelector('#placeToPutResult').innerHTML = total
 }
