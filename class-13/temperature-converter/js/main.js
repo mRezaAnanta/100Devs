@@ -1,31 +1,10 @@
 //Write your pseduo code first! 
-const tempOne = document.querySelector('.tempOne');
-const tempTwo = document.querySelector('.tempTwo');
 const answerOne = document.querySelector('.answerOne');
 const answerTwo = document.querySelector('.answerTwo');
 const swap = document.querySelector('.swap');
 const convert = document.querySelector('.convert');
 const celsiusChar = "\u2103";
 const fahrenheitChar = "\u2109";
-
-let swapTemp = () => {
-  if (tempOne.innerText == "Celsius") {
-    tempOne.innerText = "Fahrenheit";
-    tempTwo.innerText = "Celsius";
-    answerOne.innerText = "32" + fahrenheitChar;
-    answerTwo.innerText = "0" + celsiusChar;
-    console.log("tempOne is Fahrenheit now!");
-    return;
-  }
-  if (tempOne.innerText == "Fahrenheit") {
-    tempTwo.innerText = "Fahrenheit";
-    tempOne.innerText = "Celsius";
-    answerTwo.innerText = "32" + fahrenheitChar;
-    answerOne.innerText = "0" + celsiusChar;
-    console.log("tempOne is Celsius now!");
-    return;
-  }
-}
 
 let celToFah = (celsius) => {
   return (celsius * 1.8) + 32;
@@ -35,22 +14,63 @@ let fahToCel = (fahrenheit) => {
   return (fahrenheit - 32) / 1.8;
 }
 
+let celToKelv = (celsius) => {
+  return (Number(celsius) + 273.15).toFixed(2);
+}
+
+let kelvToCel = (kelv) => {
+  return (Number(kelv) - 273.15).toFixed(2);
+}
+
+let fahToKelv = (fahrenheit) => {
+  return (((fahrenheit - 32) / 1.8) + 273.15).toFixed(2);
+}
+
+let kelvToFah = (kelv) => {
+  return (((Number(kelv) - 273.15) * 1.8) + 32).toFixed(2);
+}
+
 let answer = () => {
   let input = document.querySelector('input').value;
+  let tempOne = document.querySelector('.selectTempOne').value;
+  let tempTwo = document.querySelector('.selectTempTwo').value;
 
-  if (tempOne.innerText == "Celsius") {
+  if (tempOne == "celsius" && tempTwo == "fahrenheit") {
     answerOne.innerText = input + celsiusChar;
     answerTwo.innerText = celToFah(input) + fahrenheitChar;
     console.log(celToFah(input));
     return;
   }
-  if (tempOne.innerText == "Fahrenheit") {
+  if (tempOne == "fahrenheit" && tempTwo == "celsius") {
     answerOne.innerText = input + fahrenheitChar;
     answerTwo.innerText = fahToCel(input) + celsiusChar;
     console.log(fahToCel(input));
     return;
   }
+  if (tempOne == "celsius" && tempTwo == "kelvin") {
+    answerOne.innerText = input + celsiusChar;
+    answerTwo.innerText = celToKelv(input) + "K";
+    console.log(celToKelv(input));
+    return;
+  }
+  if (tempOne == "kelvin" && tempTwo == "celsius") {
+    answerOne.innerText = input + "K";
+    answerTwo.innerText = kelvToCel(input) + celsiusChar;
+    console.log(kelvToCel(input));
+    return;
+  }
+  if (tempOne == "fahrenheit" && tempTwo == "kelvin") {
+    answerOne.innerText = input + fahrenheitChar;
+    answerTwo.innerText = fahToKelv(input) + "K";
+    console.log(fahToKelv(input));
+    return;
+  }
+  if (tempOne == "kelvin" && tempTwo == "fahrenheit") {
+    answerOne.innerText = input + "K";
+    answerTwo.innerText = kelvToFah(input) + fahrenheitChar;
+    console.log(kelvToFah(input));
+    return;
+  }
 }
 
-swap.addEventListener("click", swapTemp);
 convert.addEventListener("click", answer);
