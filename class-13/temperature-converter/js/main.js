@@ -1,7 +1,5 @@
-//Write your pseduo code first! 
 const answerOne = document.querySelector('.answerOne');
 const answerTwo = document.querySelector('.answerTwo');
-const swap = document.querySelector('.swap');
 const convert = document.querySelector('.convert');
 const celsiusChar = "\u2103";
 const fahrenheitChar = "\u2109";
