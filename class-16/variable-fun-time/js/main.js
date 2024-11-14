@@ -27,5 +27,6 @@ console.log("input: " + input)
 h1.addEventListener("click", sum);
 
 function sum() {
-  console.log("sum: " + (num + input))
+  let newInput = document.querySelector('input#danceDanceRevolution').value;
+  console.log("sum: " + (num + parseInt(newInput)))
 }

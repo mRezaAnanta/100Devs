@@ -1,5 +1,6 @@
 # Links
 
+## Class 16
 - [The JS Way](https://github.com/bpesquet/thejsway)
 - [Eloquent Javascript](http://eloquentjavascript.net/3rd_edition/)
 - [Codeacademy: Intro to Javascript](https://www.codecademy.com/learn/introduction-to-javascript)
