@@ -19,3 +19,4 @@
 - [Color picker](https://imagecolorpicker.com/)
 - [MDN](https://developer.mozilla.org/en-US/)
 - [Download Webpage to PDF](https://webtopdf.com/)
+- [Open Source Contributions](https://www.firsttimersonly.com/)
