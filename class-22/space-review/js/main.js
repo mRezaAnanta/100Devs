@@ -16,11 +16,13 @@ reverseString("strings")
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
 const palindrome = (string) => {
-  let arr = string.split('')
-  let a = []
-  for (let i = 0; i < arr.length; i++) {
-    if (!a.includes(arr[i])) a.push(arr[i])
-  }
-  return (a.length == arr.length)
+  // let arr = string.split('')
+  // let a = []
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (!a.includes(arr[i])) a.push(arr[i])
+  // }
+  // return (a.length == arr.length)
+  return string === string.split('').reverse().join('')
 }
-console.log(palindrome("abcdefghij"))
+alert(palindrome("abcdefghij"))
+alert(palindrome("abccba"))
