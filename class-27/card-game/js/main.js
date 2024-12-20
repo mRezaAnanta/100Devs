@@ -65,5 +65,5 @@ function whoWin(player1, player2) {
   // let p2 = typeof player2 === 'string' ? parseInt(player2) : player2
   //
   console.log(p1, typeof p1, p2, typeof p2)
-  return p1 > p2 ? "PLAYER 1 WON" : "PLAYER 2 WON"
+  return p1 == p2 ? "WAR!" : p1 > p2 ? "PLAYER 1 WON" : "PLAYER 2 WON"
 }
