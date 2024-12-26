@@ -14,10 +14,10 @@ let fahrenheitToCelcius = (fahrenheit) => {
 }
 
 let canCharmanderBattle = (x) => {
-  return this.fahrenheitToCelcius(x) > 0 ? "Charmander can battle!" : "Charmander can't battle :("
+  return fahrenheitToCelcius(x) > 0 ? "Charmander can battle!" : "Charmander can't battle :("
 }
 
-console.log(canCharmanderBattle(20))
+console.log(canCharmanderBattle(40))
 
 //Loops
 //You have joined an undeground pokemon leauge. In this league, trainers can use any number of pokemon. Print to the console "Pikachu I choose you" x times where x is the number of pokemon the trainer you are battling has in their party
@@ -25,6 +25,7 @@ let loop = (n) => {
   let i = 0
   while (i < n) {
     console.log("Pikachu I choose you")
+    i++
   }
 }
 loop(3)
