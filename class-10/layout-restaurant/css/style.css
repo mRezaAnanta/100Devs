@@ -3,9 +3,10 @@
 /*******************************************/
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 :root {
   --dark-orange: #FF8800;
   --light-orange: #FFA84B;
@@ -13,18 +14,23 @@
   --black: #000000;
   --white: #fafafa;
 }
+
 a {
   text-decoration: none;
   color: var(--black);
   /*color: var(--dark-orange);*/
 }
+
 body {
   font-family: "Roboto", arial;
   color: var(--black);
 }
-h1, h2 {
+
+h1,
+h2 {
   font-family: "Yeseva One", Garamond, arial;
 }
+
 /*svg {*/
 /*  color: var(--dark-orange);*/
 /*}*/
@@ -47,15 +53,19 @@ h1, h2 {
 svg {
   height: 0.8rem;
 }
+
 header svg {
   height: 1.5rem;
 }
-nav, header ul {
+
+nav,
+header ul {
   display: flex;
   flex-flow: row wrap;
   column-gap: 2.5rem;
   justify-content: flex-end;
 }
+
 header {
   padding: 2rem;
 }
@@ -66,17 +76,20 @@ header {
   padding: 5rem 3rem;
   background-image: url('https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
+
 .hero span {
   padding: 0;
 }
+
 .form {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 2rem;
   width: 50%;
 }
+
 .form input {
   width: 75%;
   height: 3rem;
@@ -86,6 +99,7 @@ header {
   /*border: 1px solid #E4E7E9;*/
   /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
 }
+
 .form button {
   width: 25%;
   height: 3rem;
@@ -99,7 +113,8 @@ header {
   font-weight: bold;
   /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
 }
-.hero > div {
+
+.hero>div {
   display: flex;
   flex-flow: row wrap;
   column-gap: 3rem;
@@ -113,14 +128,17 @@ header {
   padding: 3rem;
   background-image: url(https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
-.about-us > div {
+
+.about-us>div {
   padding-right: 10rem;
   width: 50%;
 }
+
 .about-us form {
   display: flex;
   height: 3rem;
 }
+
 .about-us .menu {
   background: var(--dark-orange);
   color: var(--white);
@@ -130,6 +148,7 @@ header {
   border-radius: 0.5rem 0 0 0.5rem;
   border: none;
 }
+
 .about-us .arrow {
   background: var(--light-orange);
   color: var(--white);
@@ -149,11 +168,13 @@ header {
   /*width: 50%;*/
   /*margin: 0 auto;*/
 }
+
 .menu-choice a {
   padding: 1rem 3rem;
   border-bottom: 1px solid #000;
   margin-bottom: 2rem;
 }
+
 .menu-choice a:hover {
   color: var(--dark-orange);
   border-bottom: 1px solid var(--dark-orange);
@@ -167,16 +188,19 @@ header {
   text-align: center;
   background-color: var(--light-gray)
 }
+
 .cuisine-gallery {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   column-gap: 3rem;
 }
+
 .gallery-img img {
   height: 18rem;
   width: 14rem;
 }
+
 .gallery-img div {
   opacity: 0;
   position: relative;
@@ -190,9 +214,11 @@ header {
   /*padding: 0.5rem 0;*/
   /*background-color: var(--black);*/
 }
-.gallery-img div > * {
+
+.gallery-img div>* {
   padding: 0.5rem 0;
 }
+
 .gallery-img button {
   width: 50%;
   height: 2rem;
@@ -204,17 +230,21 @@ header {
   background: var(--dark-orange);
   color: var(--white);
 }
+
 .gallery-img:hover img {
   opacity: 0.3;
 }
+
 .gallery-img:hover div {
   opacity: 0.8;
 }
+
 /*.gallery-img div {*/
 /*  display: none;*/
 /*}*/
 /*.gallery-img img:hover {*/
-/*  /*display: block;*/*/
+/*  /*display: block;*/
+*/
 /*  .gallery-img div {*/
 /*    display: block;*/
 /*  }*/
@@ -229,28 +259,33 @@ header {
   padding: 5rem;
   background-image: url("https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
-.reservation > * {
+
+.reservation>* {
   text-align: center;
   width: 50%;
   margin: 0 auto;
 }
+
 .reservation .date {
   display: flex;
   /*flex-flow: row wrap;*/
   justify-content: center;
   width: 100%;
 }
+
 .date div {
   text-align: left;
   padding: 0 3rem;
   margin-bottom: 4rem;
 }
+
 .reservation svg {
   height: 1.5rem;
   /*width: 5rem;*/
   /*margin-bottom: 1rem;*/
   margin: 0.5rem auto;
 }
+
 .reservation .img {
   height: 20rem;
   width: 40rem;
@@ -264,20 +299,25 @@ header {
   text-align: center;
   padding: 5rem;
 }
+
 .testimonials img {
   border-radius: 50%;
   height: 5rem;
 }
+
 .testimonials div {
   margin: 1.5rem;
 }
-.star-svg{
-  background-color:#ff0;
+
+.star-svg {
+  background-color: #ff0;
   height: 1.3rem;
 }
-.star-svg path{
+
+.star-svg path {
   fill: #fff;
 }
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -287,27 +327,35 @@ h1 {
   font-weight: bold;
   padding-bottom: 1.5rem;
 }
-a, span, p {
+
+a,
+span,
+p {
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
+
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
   padding-bottom: 1.5rem;
 }
+
 h3 {
   color: var(--dark-orange);
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
+
 h4 {
   font-size: 2rem;
 }
+
 h5 {
   /*margin-bottom: 0.5rem;*/
   padding-bottom: 0.5rem;
 }
+
 h6 {
   font-size: 2rem;
   font-family: "Yeseva One", arial;
@@ -315,9 +363,11 @@ h6 {
   font-weight: bold;
   padding-bottom: 1rem;
 }
+
 .testimonials p {
   font-style: italic;
 }
+
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
@@ -325,6 +375,7 @@ h6 {
   .form * {
     /*width: 100%;*/
   }
+
   .hero-top {
     width: 75%;
   }
